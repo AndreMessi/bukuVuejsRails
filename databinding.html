@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>seri brlajar vuejs</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="tittle">
+        <p>
+            <b>
+                materi :</b> {{ tittle }}
+            </b>
+        </p>
+    </div>
+</body>
+<!-- untuk mrngambil vuejs CDN -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.js"></script>
+<script>
+    var app=new Vue({
+        el:'#app',
+        data: {
+            tittle:'mencoba vuejs data binding'
+        }
+    })
+</script>
+</html>
